@@ -7,10 +7,20 @@ State notifier : On the other hand, StateNotifier is an immutable state manageme
 
 
 Difference between change notifier and state notifier:
-       Change notifier                                                            state notifier
 
-Mutable state(objects are mutable)                                       immutable(objects are immutable)(modifies the state)
-Dependent on flutter                            		                 independent on flutter
-Time complexity is higher                   		                     time complexity is lower
-In the long run it is hard to manage code                                easy to manage code in long run
-Manually call notifylisteners()                                          automatically calls
+       Change notifier                                                            
+
+Mutable state(objects are mutable)                                       
+Dependent on flutter                            		                 
+Time complexity is higher                   		                     
+In the long run it is hard to manage code                               
+Manually call notifylisteners()                                          
+          
+          
+       state notifier
+
+immutable(objects are immutable)(modifies the state)
+independent on flutter
+time complexity is lower
+easy to manage code in long
+automatically calls
