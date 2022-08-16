@@ -1,16 +1,16 @@
-# provchangenotifier
+                              State management in flutter
 
-A new Flutter project.
+Change notifier : A class called ChangeNotifier sends change notifications to its listeners. This implies that you can call the notifyListeners() method of a class that has been extended or combined with a ChangeNotifier to subscribe to changes in that class. The widgets that are subscribed to this class will be informed to rebuild by this function.
 
-## Getting Started
+State notifier : On the other hand, StateNotifier is an immutable state management solution where the state can be directly changed within the notifier. It is an amplification of the ValueNotifier. Also, StateNotifier is an independent package that doesn’t rely on Flutter, unlike ChangeNotifier, and it can be used within your Dart projects as well.
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Difference between change notifier and state notifier:
+       Change notifier                                                            state notifier
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Mutable state(objects are mutable)                                       immutable(objects are immutable)(modifies the state)
+Dependent on flutter                            		                 independent on flutter
+Time complexity is higher                   		                     time complexity is lower
+In the long run it is hard to manage code                                easy to manage code in long run
+Manually call notifylisteners()                                          automatically calls
